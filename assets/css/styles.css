@@ -40,7 +40,7 @@
 
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 1200px) {
     :root {
         --big-font-size    : 3.5rem;
         --h1-font-size     : 2.25rem;
@@ -181,7 +181,7 @@ img {
     align-items   : center;
     color         : var(--title-color);
     font-size     : var(--h2-font-size);
-    transform     : .3s;
+    transition    : .3s;
 }
 
 .nav__logo-part {
@@ -209,7 +209,7 @@ img {
         height          : 100%;
         border-radius   : 1rem 0 0 1rem;
         padding         : 4rem 0 0 2rem;
-        transform       : .4s;
+        transition      : .3s;
         z-index         : 1000;
         box-shadow      : -2px 0 4px rgb(228, 9, 9);
     }
@@ -220,9 +220,9 @@ img {
     }
 
     .nav__link {
-        font-size: var(--font-medium);
-        color    : var(--title-color);
-        transform: .3s;
+        font-size : var(--font-medium);
+        color     : var(--title-color);
+        transition: .3s;
     }
 
     .nav__link:hover {
@@ -306,3 +306,143 @@ img {
 .swiper-pagination-bullet-active {
     background: hsl(0, 72%, 37%);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .container {
+        margin-left : .5rem;
+        margin-right: .5rem;
+    }
+
+    .slide {
+        min-height: 60vh;
+    }
+
+    .button {
+        padding: .2rem 1rem;
+    }
+
+}
+
+/* For medium devices */
+/* =======================576============================ */
+
+@media screen and (min-width: 576px) {
+
+
+    .slide__description {
+        font-size: var(--h1-font-size);
+    }
+}
+
+
+/* =======================767============================ */
+
+@media screen and (min-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    .container {
+        margin-left : var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+
+    .nav {
+        height    : calc(var(--header-height) + 1.5rem);
+        column-gap: 3rem;
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+
+    .nav__list {
+        display       : flex;
+        flex-direction: row;
+        column-gap    : 1.5rem;
+    }
+
+    .nav__link {
+        color: var(--title-color);
+    }
+
+    .nav__menu {
+        margin-left: auto;
+    }
+
+    .home {
+        margin-top: calc(var(--header-height) + 1.5rem);
+    }
+
+    .slide__content {
+        width: 56%;
+    }
+
+    .slide__title {
+        font-size: var(--normal-font-size);
+    }
+
+    .slide__description {
+        font-size: var(--big-font-size);
+    }
+
+    .button {
+        padding  : .5rem 2rem;
+        font-size: var(--normal-font-size);
+    }
+
+}
+
+/* For large devices */
+/* =======================992============================ */
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+    .section {
+        padding: 8rem 0 1rem;
+    }
+
+    .nav__list {
+        column-gap: 2.5rem;
+    }
+
+    .slide__content {
+        width: 50%;
+    }
+
+    .slide__description {
+        font-size: var(--h1-font-size);
+    }
+
+}
+
+/* =======================1200============================ */
+
+@media screen and (min-width: 1200px) {}
