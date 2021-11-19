@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -16,8 +18,87 @@
 
 <body>
 
-    <div class="bg"></div>
+    <header class="header">
+        <nav class="nav container">
+            <a href="" class="nav__logo"><span class="nav__logo-part">BE</span>FIT</a>
 
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#features" class="nav__link">Features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#pricing" class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#trainers" class="nav__link">Trainers</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blogs" class="nav__link">Blogs</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line nav__close-icon"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-icon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="slide swiper-slide" style="background: url(./assets/img/home-bg-1.jpg) no-repeat;">
+                            <div class=" slide__content">
+                                <p class="slide__title">Be Strong.Be Fit</p>
+                                <h3 class="slide__description">
+                                    Make Yourself Stronger Than Your Excuses
+                                </h3>
+                                <a href="#" class="button">Get Start</a>
+                            </div>
+                        </div>
+
+                        <div class="slide swiper-slide" style="background: url(./assets/img/home-bg-2.jpg) no-repeat;">
+                            <div class=" slide__content">
+                                <p class="slide__title">Be Strong.Be Fit</p>
+                                <h3 class="slide__description">
+                                    Make Yourself Stronger Than Your Excuses
+                                </h3>
+                                <a href="#" class="button">Get Start</a>
+                            </div>
+                        </div>
+
+                        <div class="slide swiper-slide" style="background: url(./assets/img/home-bg-3.jpg) no-repeat;">
+                            <div class=" slide__content">
+                                <p class="slide__title">Strong.Be Fit</p>
+                                <h3 class="slide__description">
+                                    Make Yourself Stronger Than Your Excuses
+                                </h3>
+                                <a href="#" class="button">Get Start</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 
