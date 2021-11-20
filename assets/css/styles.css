@@ -460,6 +460,16 @@ img {
     height: auto;
 }
 
+.features__image {
+    overflow: hidden;
+    display : inline-flex;
+}
+
+.features__box:hover .features__image-img {
+    -webkit-transform: scale(1.1);
+    transform        : scale(1.1);
+}
+
 
 
 
@@ -658,7 +668,7 @@ img {
     }
 
     .features__content {
-        padding: 1.25rem .75rem;
+        padding: 1rem .75rem;
     }
 
     .features__data {
@@ -759,7 +769,7 @@ img {
     }
 
     .features__content {
-        padding: 1rem .5rem;
+        padding: .8rem .5rem;
         row-gap: .5rem;
     }
 
