@@ -40,18 +40,6 @@
 
 }
 
-@media screen and (min-width: 1200px) {
-    :root {
-        --big-font-size    : 3.5rem;
-        --h1-font-size     : 2.25rem;
-        --h2-font-size     : 1.5rem;
-        --h3-font-size     : 1.25rem;
-        --normal-font-size : 1rem;
-        --small-font-size  : .875rem;
-        --smaller-font-size: .813rem;
-    }
-}
-
 * {
     box-sizing: border-box;
     padding   : 0;
@@ -121,6 +109,10 @@ img {
     transform        : scale(1.1);
 }
 
+.button--custom {
+    margin: auto auto auto 0;
+}
+
 .section {
     padding: 4.5rem 0 1rem;
 }
@@ -137,7 +129,7 @@ img {
 }
 
 .container {
-    max-width   : 968px;
+    max-width   : 1020px;
     margin-left : var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
@@ -431,8 +423,13 @@ img {
         padding: .2rem 1rem;
     }
 
+
+    .button--custom {
+        margin: auto auto auto 0;
+    }
+
     .about__title {
-        font-size: var(--h3-font-size);
+        font-size: var(--h2-font-size);
 
     }
 
@@ -465,6 +462,11 @@ img {
 
     .slide__description {
         font-size: var(--h1-font-size);
+    }
+
+
+    .button--custom {
+        margin: auto auto auto 0;
     }
 }
 
@@ -510,7 +512,8 @@ img {
     }
 
     .slide__content {
-        width: 56%;
+        width  : 56%;
+        padding: 0 0 0 3rem;
     }
 
     .slide__title {
@@ -527,33 +530,49 @@ img {
     }
 
     .about__container {
-        display: grid;
-        row-gap: 2.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap           : 3rem;
     }
 
+    .about__content {
+        grid-template-columns: 50% 50%;
+        grid-template-rows   : 50% 50%;
+        gap                  : .2rem .5rem;
+    }
+
+    .about__box-data {
+        align-items: center;
+        padding    : 1.5rem;
+    }
+
+
     .about__it {
-        font-size: var(--normal-font-size);
+        font-size: var(--small-font-size);
     }
 
     .about__title {
-        font-size: var(--h1-font-size);
+        font-size: var(--h2-font-size);
 
     }
 
     .about__description {
-        font-size: var(--normal-font-size);
+        font-size: var(--smaller-font-size);
     }
 
     .about__item {
-        row-gap: 1rem;
+        row-gap: .1rem;
+    }
+
+    .about__box-img {
+        max-width: 100%;
     }
 
     .about__item-title {
-        font-size: var(--h3-font-size);
+        font-size: var(--small-font-size);
     }
 
     .about__item-description {
-        font-size: var(--normal-font-size);
+        font-size: var(--smaller-font-size);
     }
 
 
@@ -568,38 +587,83 @@ img {
     }
 
     .section {
-        padding: 8rem 0 1rem;
+        padding: 4.5rem 0 1rem;
     }
 
     .nav__list {
         column-gap: 2.5rem;
     }
 
+    .slide {
+        min-height: 65vh;
+    }
+
     .slide__content {
-        width: 50%;
+        width  : 50%;
+        padding: 0 0 0 5rem;
     }
 
     .slide__description {
+        font-size: var(--big-font-size);
+    }
+
+    /* ============ */
+
+    .about__header {
+        row-gap: .5rem;
+    }
+
+    .about__it {
+        font-size  : var(--normal-font-size);
+        font-weight: 600;
+    }
+
+    .about__title {
         font-size: var(--h1-font-size);
+
     }
 
-    .about__container {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap           : 4rem;
+    .about__description {
+        font-size: var(--small-font-size);
     }
 
-    .about__box-img {
-        max-width: 100%;
+    .about__box-data {
+        row-gap: .75rem;
+        padding: 1rem;
     }
 
     .about__content {
-        grid-template-columns: 50% 50%;
-        grid-template-rows   : 50% 50%;
-        gap                  : 1rem .75rem
+        gap: .75rem 1rem;
+    }
+
+    .about__item {
+        row-gap: .1rem;
+    }
+
+    .about__item-title {
+        font-size: var(--h3-font-size);
+    }
+
+    .about__item-description {
+        font-size: var(--small-font-size);
     }
 
 }
 
 /* =======================1200============================ */
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+
+    .slide {
+        min-height: 70vh;
+    }
+
+
+    .slide__content {
+        padding: 0 0 0 5rem;
+    }
+
+    .about__box-data {
+        padding: 0;
+    }
+}
