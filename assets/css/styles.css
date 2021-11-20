@@ -19,6 +19,7 @@
 
     --body-font        : 'Poppins', sans-serif;
     --big-font-size    : 2rem;
+    --h0-font-size     : 1.75rem;
     --h1-font-size     : 1.5rem;
     --h2-font-size     : 1.25rem;
     --h3-font-size     : 1rem;
@@ -144,6 +145,12 @@ img {
     padding      : .5rem 1.5rem;
     border       : 0.1rem solid #aaa;
     border-radius: .5rem;
+}
+
+.check--icon {
+    color      : var(--first-color);
+    font-size  : 1.2rem;
+    font-weight: 700;
 }
 
 .section {
@@ -419,11 +426,6 @@ img {
     column-gap : .75rem;
 }
 
-.about__item-icon {
-    color      : var(--first-color);
-    font-size  : 1.2rem;
-    font-weight: 700;
-}
 
 .about__item-title {
     font-size  : var(--normal-font-size);
@@ -470,11 +472,67 @@ img {
     transform        : scale(1.1);
 }
 
+/*=============== PRICING ===============*/
 
+.pricing__data {
+    display: grid;
+    row-gap: .75rem;
+    padding: 2rem;
+}
 
+.pricing__it {
+    color: var(--first-color);
+}
 
+.pricing__title {
+    font-size     : var(--h1-font-size);
+    font-weight   : 400;
+    text-transform: capitalize;
+}
 
+.pricing__description,
+.pricing__check {
+    font-size: var(--small-font-size);
+}
 
+.pricing__list {
+    display: grid;
+    row-gap: .75rem;
+}
+
+.pricing__check {
+    font-size: var(--small-font-size);
+}
+
+.pricing__box {
+    text-align: center;
+    display   : grid;
+    padding   : 2rem;
+    row-gap   : 1rem;
+
+}
+
+.pricing__box-title {
+    font-size     : var(--h2-font-size);
+    font-weight   : 300;
+    text-transform: capitalize;
+}
+
+.pricing__price {
+    font-size: 2rem;
+    color    : var(--first-color);
+
+}
+
+.pricing__price span {
+    font-size: var(--normal-font-size);
+    color    : var(--title-color);
+
+}
+
+.pricing__basic {
+    background: linear-gradient(130deg, #111 93%, transparent 90%);
+}
 
 
 
@@ -691,6 +749,11 @@ img {
         flex-flow            : column-reverse;
     }
 
+    .pricing__container {
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 /* For large devices */
@@ -778,6 +841,12 @@ img {
         height: auto;
     }
 
+
+    .pricing__container {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 
 /* =======================1200============================ */
@@ -796,4 +865,6 @@ img {
     .about__box-data {
         padding: 0;
     }
+
+
 }
