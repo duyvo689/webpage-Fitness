@@ -580,7 +580,7 @@ img {
     padding-top: .5rem;
     column-gap : .5rem;
     margin-top : .75rem;
-    transition : 3s;
+    transition : .3s;
 }
 
 .trainers__share {
@@ -673,6 +673,7 @@ img {
     .trainers__lists {
         display              : grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap           : 1rem;
     }
 
 }
