@@ -94,15 +94,15 @@ img {
 }
 
 .button {
-    margin-top   : 1rem;
-    display      : inline-block;
-    padding      : .5rem .75rem;
-    padding-right: 2rem;
-    background   : linear-gradient(130deg, #f00 93%, transparent 90%);
-    color        : #fff;
-    cursor       : pointer;
-    font-size    : .75rem;
-
+    margin-top    : 1rem;
+    display       : inline-block;
+    padding       : .5rem .75rem;
+    padding-right : 2rem;
+    background    : linear-gradient(130deg, #f00 93%, transparent 90%);
+    color         : #fff;
+    cursor        : pointer;
+    font-size     : .75rem;
+    text-transform: capitalize;
 }
 
 .button:hover {
@@ -592,6 +592,43 @@ img {
     cursor: pointer;
 }
 
+/*=============== BANNER ===============*/
+
+.banner__container {
+    background           : -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/banner-bg.jpg) no-repeat;
+    background           : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-bg.jpg) no-repeat;
+    background-size      : cover;
+    background-position  : center;
+    background-attachment: fixed;
+    text-align           : center;
+}
+
+.banner__content {
+    padding: 1rem 0;
+}
+
+.banner__title {
+    font-size     : var(--small-font-size);
+    color         : #f00;
+    text-transform: capitalize;
+}
+
+.banner__discount {
+    padding-top   : 1rem;
+    color         : #fff;
+    text-transform: uppercase;
+    font-size     : var(--h1-font-size);
+}
+
+.banner__description {
+    margin     : 1rem auto;
+    max-width  : 60rem;
+    font-size  : var(--small-font-size);
+    color      : #aaa;
+    line-height: 2;
+}
+
+
 
 
 
@@ -816,6 +853,21 @@ img {
         display              : grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+
+    .banner__title {
+        font-size: var(--h3-font-size);
+    }
+
+    .banner__discount {
+        font-size: var(--big-font-size);
+    }
+
+    .banner__description {
+        font-size: var(--h3-font-size);
+        padding  : 0 3rem;
+    }
+
 
 }
 
