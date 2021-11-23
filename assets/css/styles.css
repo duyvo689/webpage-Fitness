@@ -293,7 +293,6 @@ img {
 .slide {
     align-items        : center;
     position           : relative;
-    background         : hsl(0, 72%, 37%);
     min-height         : 70vh;
     background-size    : cover !important;
     background-position: center !important;
@@ -630,6 +629,108 @@ img {
 
 
 
+/*=============== REVIEW ===============*/
+
+.review__container {
+    display    : flex;
+    align-items: center;
+    gap        : 2rem;
+    flex-wrap  : wrap;
+}
+
+.review__content {
+    display         : grid;
+    row-gap         : .75rem;
+    -webkit-box-flex: 1;
+    -ms-flex        : 1 1 35rem;
+    flex            : 1 1 35rem;
+}
+
+.review__title {
+    text-transform: capitalize;
+    font-size     : var(--normal-font-size);
+    color         : #f00;
+}
+
+.review__question {
+    font-size: var(--big-font-size);
+    color    : #fff;
+}
+
+.review__description {
+    font-size  : var(--normal-font-size);
+    line-height: 2;
+    color      : #aaa;
+}
+
+.review__sliders {
+    display         : inline-flex;
+    -webkit-box-flex: 1;
+    -ms-flex        : 1 1 60rem;
+    flex            : 1 1 60rem;
+}
+
+.review__slider {
+    background: linear-gradient(130deg, #111 93%, transparent 90%);
+    padding   : 2rem 3rem;
+}
+
+.review__slider-description {
+    font-size  : var(--normal-font-size);
+    line-height: 2;
+    color      : #aaa;
+}
+
+.review__user {
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    margin-top       : 1.5rem;
+}
+
+.review__img {
+    height       : 5rem;
+    width        : 5rem;
+    -o-object-fit: cover;
+    object-fit   : cover;
+    border-radius: 50%;
+    margin-right : 1rem;
+}
+
+.review__name {
+    font-size     : var(--h3-font-size);
+    color         : #fff;
+    text-transform: capitalize;
+}
+
+.review__job {
+    color         : #f00;
+    font-size     : var(--small-font-size);
+    text-transform: capitalize;
+}
+
+.review__icon {
+    font-size   : 3rem;
+    margin-left : auto;
+    margin-right: 2rem;
+    color       : #f00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -868,6 +969,16 @@ img {
         padding  : 0 3rem;
     }
 
+    .review__container {
+        display    : flex;
+        align-items: center;
+        gap        : 2rem;
+        flex-wrap  : nowrap;
+    }
+
+    .review__slider {
+        padding: 1rem 0 1rem 1rem;
+    }
 
 }
 

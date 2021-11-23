@@ -42,3 +42,21 @@ var swiper = new Swiper(".home__slider", {
         clickable: true,
     },
 });
+
+var swiper = new Swiper(".review__sliders", {
+    spaceBetween: 20,
+    grabCursor: true,
+    // loop: true,
+    // autoplay: {
+    //     delay: 7500,
+    //     disableOnInteraction: false,
+    // },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        932: {
+            slidesPerView: 2,
+        },
+    },
+});
